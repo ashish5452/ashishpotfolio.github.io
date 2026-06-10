@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashish Kumar Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0f1f;
+color:white;
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00d9ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00d9ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+padding:100px 10%;
+background:linear-gradient(135deg,#0a0f1f,#111827);
+}
+
+.hero img{
+width:320px;
+height:320px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #00d9ff;
+box-shadow:0 0 40px #00d9ff;
+}
+
+.hero-text h1{
+font-size:60px;
+color:#00d9ff;
+}
+
+.hero-text h2{
+margin-top:10px;
+font-size:30px;
+}
+
+.hero-text p{
+margin-top:15px;
+line-height:1.8;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#00d9ff;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+color:#00d9ff;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:20px;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(0,217,255,.15);
+}
+
+.timeline{
+border-left:3px solid #00d9ff;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:25px;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill-name{
+margin-bottom:8px;
+}
+
+.bar{
+height:12px;
+background:#1f2937;
+border-radius:20px;
+}
+
+.fill{
+height:12px;
+background:#00d9ff;
+border-radius:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:15px 0;
+}
+
+footer{
+background:#050814;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:230px;
+height:230px;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+.hero-text h2{
+font-size:22px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:10px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Ashish</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<img src="d:\2026potfolio\ashishn.jpg" alt="Ashish Kumar">
+
+<div class="hero-text">
+
+<h1>Ashish Kumar</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+BCA Student at TP College Madhepura, ITI Diesel Mechanic,
+and Ex-Automobile Professional with 1+ year experience.
+Passionate about Web Development, Programming and Technology.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am Ashish Kumar, currently pursuing BCA (2024-2027)
+from TP College Madhepura.
+
+I have completed ITI in Diesel Mechanic trade and gained
+more than one year of practical experience in the automobile industry.
+
+My goal is to become a successful Software Developer and
+build innovative digital solutions through technology.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card timeline">
+
+<div>
+<h3>BCA (2024-2027)</h3>
+<p>TP College Madhepura</p>
+</div>
+
+<div>
+<h3>ITI - Diesel Mechanic</h3>
+</div>
+
+<div>
+<h3>Intermediate (12th)</h3>
+</div>
+
+<div>
+<h3>Matriculation (10th)</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">Experience</h2>
+
+<div class="card">
+
+<h3>Automobile Industry Experience</h3>
+
+<p>
+
+Worked in Maruti Suzuki automobile environment with practical exposure to:
+
+<br><br>
+
+✔ Vehicle Maintenance<br>
+✔ Diesel Engine Diagnostics<br>
+✔ Technical Troubleshooting<br>
+✔ Workshop Operations<br>
+✔ Quality & Safety Procedures<br>
+✔ Team Coordination
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">C Programming</div>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">C++</div>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="bar"><div class="fill" style="width:65%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Web Development</div>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="card contact">
+
+<p>📞 9546459257</p>
+
+<p>📧 ashishnysha@gmail.com</p>
+
+<p>📷 Instagram: @ek__villan__45_</p>
+
+<p>📍 Madhepura, Bihar, India</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 Ashish Kumar</h3>
+
+<p>Designed With ❤ By Ashish Kumar</p>
+
+</footer>
+
+<script>
+
+const texts=[
+"BCA Student",
+"Web Developer",
+"Ex-Automobile Professional",
+"Future Software Engineer"
+];
+
+let count=0;
+let index=0;
+let currentText="";
+let letter="";
+
+(function type(){
+
+if(count===texts.length){
+count=0;
+}
+
+currentText=texts[count];
+letter=currentText.slice(0,++index);
+
+document.getElementById("typing").textContent=letter;
+
+if(letter.length===currentText.length){
+count++;
+index=0;
+setTimeout(type,1200);
+}
+else{
+setTimeout(type,120);
+}
+
+})();
+
+</script>
+
+</body>
+</html>
